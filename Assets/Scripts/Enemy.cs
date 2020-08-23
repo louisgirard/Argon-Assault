@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject deathExplosion;
+    [SerializeField] Transform parent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,15 +14,10 @@ public class Enemy : MonoBehaviour
         boxCollider.isTrigger = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnParticleCollision(GameObject other)
     {
-        print("Ship " + gameObject.name + " collided with particles " + other.name);
+        GameObject explosion = Instantiate(deathExplosion, transform.position, Quaternion.identity);
+        explosion.transform.parent = parent;
         Destroy(gameObject);
     }
 }
