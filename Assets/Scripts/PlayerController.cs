@@ -2,20 +2,23 @@
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("m/s")][SerializeField] float speed = 10f;
     [Tooltip("m")] [SerializeField] float xRange = 4.5f;
     [Tooltip("m")] [SerializeField] float yRange = 2f;
 
+    [Header("Screen Position")]
     [SerializeField] float positionPicthFactor = -5f;
-    [SerializeField] float controlPicthFactor = -20f;
-
     [SerializeField] float positionYawFactor = 5f;
 
+    [Header("Control Throw")]
+    [SerializeField] float controlPicthFactor = -20f;
     [SerializeField] float controlRollFactor = -10f;
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +29,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
     private void ProcessTranslation()
@@ -59,8 +65,8 @@ public class Player : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void DisableControls()
     {
-        print("collided with " + other.gameObject.name);
+        isControlEnabled = false;
     }
 }
