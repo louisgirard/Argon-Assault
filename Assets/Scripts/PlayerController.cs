@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("m/s")][SerializeField] float speed = 10f;
     [Tooltip("m")] [SerializeField] float xRange = 4.5f;
     [Tooltip("m")] [SerializeField] float yRange = 2f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen Position")]
     [SerializeField] float positionPicthFactor = -5f;
@@ -20,12 +21,6 @@ public class PlayerController : MonoBehaviour
     float xThrow, yThrow;
     bool isControlEnabled = true;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +28,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
@@ -68,5 +64,26 @@ public class PlayerController : MonoBehaviour
     private void OnPlayerDeath()
     {
         isControlEnabled = false;
+    }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            TriggerGuns(true);
+        }
+        else
+        {
+            TriggerGuns(false);
+        }
+    }
+
+    private void TriggerGuns(bool active)
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(active);
+        }
+
     }
 }

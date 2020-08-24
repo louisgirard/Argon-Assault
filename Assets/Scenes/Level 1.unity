@@ -588,6 +588,12 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &635915490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32788631491191989, guid: cec67f7329e8db246a069c4eaf2bf346,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083622774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &639029933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1258,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1041922201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1110043073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32788631491191989, guid: cec67f7329e8db246a069c4eaf2bf346,
+    type: 3}
+  m_PrefabInstance: {fileID: 32788632267359672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1224500851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1556,6 +1568,9 @@ MonoBehaviour:
   speed: 7
   xRange: 4.5
   yRange: 2
+  guns:
+  - {fileID: 1110043073}
+  - {fileID: 635915490}
   positionPicthFactor: -5
   positionYawFactor: 5
   controlPicthFactor: -20
@@ -2440,7 +2455,7 @@ PrefabInstance:
     - target: {fileID: 32788631491191989, guid: cec67f7329e8db246a069c4eaf2bf346,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Right
+      value: Gun Right
       objectReference: {fileID: 0}
     - target: {fileID: 32788631491191990, guid: cec67f7329e8db246a069c4eaf2bf346,
         type: 3}
@@ -2556,7 +2571,7 @@ PrefabInstance:
     - target: {fileID: 32788631491191989, guid: cec67f7329e8db246a069c4eaf2bf346,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Left
+      value: Gun Left
       objectReference: {fileID: 0}
     - target: {fileID: 32788631491191990, guid: cec67f7329e8db246a069c4eaf2bf346,
         type: 3}
