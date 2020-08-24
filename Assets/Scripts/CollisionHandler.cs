@@ -13,7 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void StartDeathSequence()
     {
-        SendMessage("DisableControls");
+        SendMessage("OnPlayerDeath");
         deathExplosion.SetActive(true);
         Invoke("ReloadScene", levelLoadDelay);
     }

@@ -271,6 +271,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 20
 --- !u!1 &551772151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1003,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 10
 --- !u!1 &898319795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1484,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 10
 --- !u!1 &1558191812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,10 +1706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1838,6 +1841,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 10
 --- !u!1001 &1873510062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2315,6 +2319,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 10
 --- !u!1001 &2040593966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2399,6 +2404,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 20
 --- !u!1001 &2083622774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2514,6 +2520,7 @@ MonoBehaviour:
   deathExplosion: {fileID: 5114513119265302188, guid: 2100a01b3e6fa474e9d1c6232cbecbbe,
     type: 3}
   parent: {fileID: 1558191813}
+  scorePerHit: 10
 --- !u!1001 &32788632267359672
 PrefabInstance:
   m_ObjectHideFlags: 0

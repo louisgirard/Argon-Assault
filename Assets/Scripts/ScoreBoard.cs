@@ -13,9 +13,9 @@ public class ScoreBoard : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-    public void ScoreHit()
+    public void ScoreHit(int scoreToAdd)
     {
-        score += 10;
+        score += scoreToAdd;
         scoreText.text = score.ToString();
     }
 }
