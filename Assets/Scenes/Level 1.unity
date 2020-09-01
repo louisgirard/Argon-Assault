@@ -14,9 +14,9 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_Fog: 1
+  m_FogColor: {r: 0.12468822, g: 0.11120505, b: 0.1981132, a: 1}
+  m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -207,7 +207,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!95 &18612868
 Animator:
   serializedVersion: 3
@@ -632,8 +632,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 0.73985404, g: 0.82678676, b: 0.9622642, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -989,7 +989,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1 &914745361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1514,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3509904606712874162, guid: 192b7fe2500f5e0449f21c651bc0474c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195210520334301586, guid: 192b7fe2500f5e0449f21c651bc0474c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918963504618881888, guid: 192b7fe2500f5e0449f21c651bc0474c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
 --- !u!4 &1354816866 stripped
@@ -1681,7 +1696,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!95 &1499349050
 Animator:
   serializedVersion: 3
@@ -1723,7 +1738,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1 &1558191812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,7 +2100,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1001 &1825170651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2171,7 +2186,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1001 &1873510062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2418,7 +2433,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1001 &2040593966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2621,7 +2636,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 1558191813}
   scorePerHit: 10
-  hits: 10
+  hits: 5
 --- !u!1001 &32788632267359672
 PrefabInstance:
   m_ObjectHideFlags: 0
